@@ -1,4 +1,4 @@
-# Arzens AI - Active Directory Attack Path Simulation
+# Active Directory Reaper - Active Directory Attack Path Simulation
 
 ## Overview
 This project applies Deep Reinforcement Learning (Deep Q-Network) to autonomously discover and exploit privilege escalation paths within an Active Directory (AD) environment. By ingesting BloodHound graph data (JSON export), the AI agent learns to navigate complex lateral movement techniques such as Kerberoasting, DCSync, Unconstrained Delegation, and ACL abuse.
