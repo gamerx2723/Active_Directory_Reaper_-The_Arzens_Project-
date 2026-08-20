@@ -1,0 +1,110 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-512",
+      "Properties": {
+        "name": "DOMAIN ADMINS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Domain Admins,CN=Users,DC=CORP,DC=LOCAL",
+        "admincount": true,
+        "highvalue": true
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-500",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-513",
+      "Properties": {
+        "name": "DOMAIN USERS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Domain Users,CN=Users,DC=CORP,DC=LOCAL",
+        "admincount": false,
+        "highvalue": false
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1104",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1105",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-515",
+      "Properties": {
+        "name": "DOMAIN COMPUTERS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Domain Computers,CN=Users,DC=CORP,DC=LOCAL",
+        "admincount": false,
+        "highvalue": false
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1101",
+          "ObjectType": "Computer"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1102",
+          "ObjectType": "Computer"
+        }
+      ],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-516",
+      "Properties": {
+        "name": "DOMAIN CONTROLLERS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Domain Controllers,DC=CORP,DC=LOCAL",
+        "admincount": true,
+        "highvalue": true
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1000",
+          "ObjectType": "Computer"
+        }
+      ],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "groups",
+    "count": 4,
+    "version": 5
+  }
+}

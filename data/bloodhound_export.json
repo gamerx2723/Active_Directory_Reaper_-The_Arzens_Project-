@@ -1,0 +1,55 @@
+{
+  "domain": "CORP.LOCAL",
+  "generated_from": "Custom 5-node test",
+  "nodes": [
+    { "id": "TEST_USER", "type": "User", "highvalue": false },
+    { "id": "TEST_SVC", "type": "User", "highvalue": false, "hasspn": true },
+    { "id": "TEST_WS1", "type": "Computer", "highvalue": false },
+    { "id": "TEST_SRV1", "type": "Computer", "highvalue": false, "unconstraineddelegation": true },
+    { "id": "DOMAIN ADMINS", "type": "Group", "highvalue": true }
+  ],
+  "edges": [
+    {
+      "source": "TEST_USER",
+      "target": "TEST_SVC",
+      "edge_type": "Kerberoastable",
+      "technique": "Kerberoast",
+      "mitre_id": "T1558.003"
+    },
+    {
+      "source": "TEST_SVC",
+      "target": "TEST_SRV1",
+      "edge_type": "AdminTo",
+      "technique": "UnconstrainedDelegation",
+      "mitre_id": "T1550"
+    },
+    {
+      "source": "TEST_SRV1",
+      "target": "DOMAIN ADMINS",
+      "edge_type": "GetChangesAll",
+      "technique": "DCSync",
+      "mitre_id": "T1003.006"
+    },
+    {
+      "source": "TEST_USER",
+      "target": "TEST_WS1",
+      "edge_type": "HasSession",
+      "technique": "UnconstrainedDelegation",
+      "mitre_id": "T1550"
+    },
+    {
+      "source": "TEST_WS1",
+      "target": "TEST_SRV1",
+      "edge_type": "ForceChangePassword",
+      "technique": "WriteDacl",
+      "mitre_id": "T1222"
+    },
+    {
+      "source": "TEST_SVC",
+      "target": "TEST_USER",
+      "edge_type": "GenericWrite",
+      "technique": "WriteDacl",
+      "mitre_id": "T1222"
+    }
+  ]
+}

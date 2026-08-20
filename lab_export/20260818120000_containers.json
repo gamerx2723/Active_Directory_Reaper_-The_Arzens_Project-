@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+      "Properties": {
+        "name": "USERS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Users,DC=CORP,DC=LOCAL"
+      },
+      "ChildObjects": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-500",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "DC=CORP,DC=LOCAL",
+        "ObjectType": "Domain"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "containers",
+    "count": 1,
+    "version": 5
+  }
+}

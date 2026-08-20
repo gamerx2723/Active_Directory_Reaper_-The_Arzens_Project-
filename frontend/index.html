@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Active Directory Reaper</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/cytoscape@3.27.2/dist/cytoscape.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <canvas id="particle-canvas"></canvas>
+  </div>
+
+  <header class="glass">
+    <h1>Active Directory Reaper</h1>
+    <p class="subtitle">An Internship Project Submitted to The Arzens Pvt. Ltd.</p>
+  </header>
+
+  <main>
+    <!-- Controls -->
+    <section class="controls glass fade-in" style="animation-delay: 0.1s;">
+      <button id="run-train" class="btn-primary">Start Training</button>
+      <button id="run-benchmark" class="btn-secondary">Run Benchmark</button>
+    </section>
+
+    <div class="dashboard-grid">
+      <section id="graph-section" class="glass fade-in" style="animation-delay: 0.2s;">
+        <h2>Active Directory Graph</h2>
+        <div class="graph-wrapper">
+          <div id="cy" class="graph-container"></div>
+        </div>
+      </section>
+      
+      <div class="right-column">
+        <section id="metrics-section" class="glass fade-in" style="animation-delay: 0.3s;">
+          <div class="metrics-header">
+            <h2>Training Metrics</h2>
+            <span id="metrics-status" class="status-badge status-fake">Loading...</span>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="metricsChart" width="400" height="250"></canvas>
+          </div>
+        </section>
+
+        <section id="results-section" class="glass fade-in" style="animation-delay: 0.4s;">
+          <h2>Benchmark Results</h2>
+          <pre id="benchmark-output">Ready to benchmark.</pre>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Worth & Evaluation Section -->
+    <section class="worth-section glass fade-in" style="animation-delay: 0.5s;">
+      <h2>Project Evaluation & Worth</h2>
+      <div class="worth-content">
+        <div class="worth-box">
+          <h3>Why It's the Best Approach</h3>
+          <p>Traditional tools like BloodHound map networks statically, limiting their discovery to pre-programmed Cypher queries. <strong>Active Directory Reaper</strong> uses a Deep Q-Network (DQN) to actively learn and autonomously chain complex, non-obvious vulnerabilities—bringing true artificial intelligence to offensive security.</p>
+        </div>
+        <div class="worth-box">
+          <h3>Real-World Industry Value</h3>
+          <p>This project sits at the cutting edge of modern cybersecurity. By automating the discovery of Active Directory escalation paths (Kerberoasting, DCSync, ACL Abuse), it drastically reduces manual assessment time for Red Teams and provides immediate, actionable remediation data for Blue Teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Carousel Section -->
+    <section class="carousel-section glass fade-in" style="animation-delay: 0.6s;">
+      <h2>Why Arzens?</h2>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-card glass-card">
+            <h3>Beyond Static Paths</h3>
+            <p>Unlike standard BloodHound which relies on static Neo4j queries, Arzens dynamically learns how to traverse Active Directory graphs using Reinforcement Learning.</p>
+          </div>
+          <div class="carousel-card glass-card">
+            <h3>Autonomous Operator</h3>
+            <p>It acts as an autonomous Red Team agent, chaining techniques like Kerberoasting and DCSync without human intervention.</p>
+          </div>
+          <div class="carousel-card glass-card">
+            <h3>Adaptive Strategies</h3>
+            <p>By exploring the environment, the AI discovers non-obvious attack paths that predefined heuristics might miss, ensuring comprehensive vulnerability discovery.</p>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prev-card">←</button>
+          <button id="next-card">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Information -->
+    <section class="info-section glass fade-in" style="animation-delay: 0.7s;">
+      <h2>System Information</h2>
+      <div class="badges-container">
+        <div class="info-badge">
+          <span class="badge-icon">🖧</span>
+          <div class="badge-text">
+            <strong>AD Topology</strong>
+            <span>Dynamic Graph Data</span>
+          </div>
+        </div>
+        <div class="info-badge">
+          <span class="badge-icon">🧠</span>
+          <div class="badge-text">
+            <strong>RL Algorithm</strong>
+            <span>DQN (Deep Q-Network)</span>
+          </div>
+        </div>
+        <div class="info-badge">
+          <span class="badge-icon">⚡</span>
+          <div class="badge-text">
+            <strong>Action Space</strong>
+            <span>Kerberoast, WriteDacl, Delegation, DCSync</span>
+          </div>
+        </div>
+        <div class="info-badge">
+          <span class="badge-icon">🎯</span>
+          <div class="badge-text">
+            <strong>Objective</strong>
+            <span>Domain Admin Escelation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

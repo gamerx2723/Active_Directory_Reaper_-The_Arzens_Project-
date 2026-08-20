@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-500",
+      "Properties": {
+        "name": "ADMINISTRATOR@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=Administrator,CN=Users,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "admincount": true,
+        "hasspn": false,
+        "dontreqpreauth": false,
+        "lastlogontimestamp": 1755600000,
+        "pwdlastset": 1734220800,
+        "sensitive": true
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-513",
+      "AllowedToDelegate": [],
+      "SPNTargets": [],
+      "HasSIDHistory": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=USERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1104",
+      "Properties": {
+        "name": "USER1@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=User1,OU=Employees,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "hasspn": false,
+        "dontreqpreauth": false,
+        "lastlogontimestamp": 1755680400,
+        "pwdlastset": 1750000000,
+        "sensitive": false,
+        "description": "Standard domain user - initial foothold account"
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-513",
+      "AllowedToDelegate": [],
+      "SPNTargets": [],
+      "HasSIDHistory": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "OU=EMPLOYEES,DC=CORP,DC=LOCAL",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1105",
+      "Properties": {
+        "name": "SVC_BACKUP@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=svc_backup,OU=ServiceAccounts,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "hasspn": true,
+        "dontreqpreauth": false,
+        "lastlogontimestamp": 1755100000,
+        "pwdlastset": 1700000000,
+        "serviceprincipalnames": [
+          "MSSQLSvc/ws01.corp.local:1433",
+          "MSSQLSvc/ws01.corp.local"
+        ],
+        "sensitive": false,
+        "description": "Legacy backup service account - weak password, granted DCSync during a migration and never revoked"
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-513",
+      "AllowedToDelegate": [],
+      "SPNTargets": [
+        {
+          "ComputerSID": "S-1-5-21-3239415629-1234567890-987654321-1101",
+          "Port": 1433,
+          "Service": "MSSQLSvc"
+        }
+      ],
+      "HasSIDHistory": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "OU=SERVICEACCOUNTS,DC=CORP,DC=LOCAL",
+        "ObjectType": "OU"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "users",
+    "count": 3,
+    "version": 5
+  }
+}

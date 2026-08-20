@@ -1,0 +1,106 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "OU=EMPLOYEES,DC=CORP,DC=LOCAL",
+      "Properties": {
+        "name": "EMPLOYEES@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "OU=Employees,DC=CORP,DC=LOCAL"
+      },
+      "Links": [],
+      "ChildObjects": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1104",
+          "ObjectType": "User"
+        }
+      ],
+      "GPLinks": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "DC=CORP,DC=LOCAL",
+        "ObjectType": "Domain"
+      }
+    },
+    {
+      "ObjectIdentifier": "OU=SERVICEACCOUNTS,DC=CORP,DC=LOCAL",
+      "Properties": {
+        "name": "SERVICEACCOUNTS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "OU=ServiceAccounts,DC=CORP,DC=LOCAL"
+      },
+      "Links": [],
+      "ChildObjects": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1105",
+          "ObjectType": "User"
+        }
+      ],
+      "GPLinks": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "DC=CORP,DC=LOCAL",
+        "ObjectType": "Domain"
+      }
+    },
+    {
+      "ObjectIdentifier": "OU=WORKSTATIONS,DC=CORP,DC=LOCAL",
+      "Properties": {
+        "name": "WORKSTATIONS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "OU=Workstations,DC=CORP,DC=LOCAL"
+      },
+      "Links": [],
+      "ChildObjects": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1101",
+          "ObjectType": "Computer"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1102",
+          "ObjectType": "Computer"
+        }
+      ],
+      "GPLinks": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "DC=CORP,DC=LOCAL",
+        "ObjectType": "Domain"
+      }
+    },
+    {
+      "ObjectIdentifier": "OU=DOMAIN CONTROLLERS,DC=CORP,DC=LOCAL",
+      "Properties": {
+        "name": "DOMAIN CONTROLLERS@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "OU=Domain Controllers,DC=CORP,DC=LOCAL"
+      },
+      "Links": [],
+      "ChildObjects": [
+        {
+          "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1000",
+          "ObjectType": "Computer"
+        }
+      ],
+      "GPLinks": [],
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "DC=CORP,DC=LOCAL",
+        "ObjectType": "Domain"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "ous",
+    "count": 4,
+    "version": 5
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "domain": "CORP.LOCAL",
+  "generated_from": "SharpHound-style export, simplified for graph_loader.py --source json",
+  "nodes": [
+    { "id": "USER1", "type": "User", "highvalue": false },
+    { "id": "SVC_BACKUP", "type": "User", "highvalue": false, "hasspn": true },
+    { "id": "WORKSTATION1", "type": "Computer", "highvalue": false, "unconstraineddelegation": true },
+    { "id": "WORKSTATION2", "type": "Computer", "highvalue": false },
+    { "id": "DC01", "type": "Computer", "highvalue": true, "isdc": true },
+    { "id": "DOMAIN ADMINS", "type": "Group", "highvalue": true }
+  ],
+  "edges": [
+    {
+      "source": "USER1",
+      "target": "SVC_BACKUP",
+      "edge_type": "Kerberoastable",
+      "technique": "kerberoast",
+      "mitre_id": "T1558.003"
+    },
+    {
+      "source": "SVC_BACKUP",
+      "target": "WORKSTATION1",
+      "edge_type": "AdminTo",
+      "technique": "unconstrained_delegation",
+      "mitre_id": "T1550"
+    },
+    {
+      "source": "WORKSTATION1",
+      "target": "DOMAIN ADMINS",
+      "edge_type": "GetChangesAll",
+      "technique": "dcsync",
+      "mitre_id": "T1003.006"
+    }
+  ]
+}

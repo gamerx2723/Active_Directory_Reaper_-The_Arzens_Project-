@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1000",
+      "Properties": {
+        "name": "DC01.CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=DC01,OU=Domain Controllers,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "unconstraineddelegation": true,
+        "haslaps": false,
+        "operatingsystem": "Windows Server 2022 Standard",
+        "lastlogontimestamp": 1755730000,
+        "isdc": true
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-516",
+      "AllowedToDelegate": [],
+      "AllowedToAct": [],
+      "Sessions": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "PrivilegedSessions": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "LocalAdmins": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "OU=DOMAIN CONTROLLERS,DC=CORP,DC=LOCAL",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1101",
+      "Properties": {
+        "name": "WS01.CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=WS01,OU=Workstations,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "unconstraineddelegation": true,
+        "haslaps": false,
+        "operatingsystem": "Windows 11 Enterprise",
+        "lastlogontimestamp": 1755700000,
+        "isdc": false,
+        "description": "Misconfig #2: Unconstrained delegation left enabled from a decommissioned print-server role"
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-515",
+      "AllowedToDelegate": [],
+      "AllowedToAct": [],
+      "Sessions": {
+        "Results": [
+          {
+            "ComputerSID": "S-1-5-21-3239415629-1234567890-987654321-1101",
+            "UserSID": "S-1-5-21-3239415629-1234567890-987654321-1104"
+          }
+        ],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "PrivilegedSessions": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "LocalAdmins": {
+        "Results": [
+          {
+            "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1105",
+            "ObjectType": "User"
+          }
+        ],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "OU=WORKSTATIONS,DC=CORP,DC=LOCAL",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321-1102",
+      "Properties": {
+        "name": "WS02.CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN=WS02,OU=Workstations,DC=CORP,DC=LOCAL",
+        "enabled": true,
+        "unconstraineddelegation": false,
+        "haslaps": true,
+        "operatingsystem": "Windows 11 Enterprise",
+        "lastlogontimestamp": 1755500000,
+        "isdc": false
+      },
+      "PrimaryGroupSID": "S-1-5-21-3239415629-1234567890-987654321-515",
+      "AllowedToDelegate": [],
+      "AllowedToAct": [],
+      "Sessions": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "PrivilegedSessions": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "LocalAdmins": {
+        "Results": [],
+        "Collected": true,
+        "FailureReason": null
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": {
+        "ObjectIdentifier": "OU=WORKSTATIONS,DC=CORP,DC=LOCAL",
+        "ObjectType": "OU"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "computers",
+    "count": 3,
+    "version": 5
+  }
+}

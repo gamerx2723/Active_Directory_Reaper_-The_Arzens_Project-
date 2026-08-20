@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "{6AC1786C-016F-11D2-945F-00C04FB984F9}",
+      "Properties": {
+        "name": "DEFAULT DOMAIN POLICY@CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "CN={6AC1786C-016F-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=CORP,DC=LOCAL",
+        "gpcpath": "\\\\corp.local\\SysVol\\corp.local\\Policies\\{6AC1786C-016F-11D2-945F-00C04FB984F9}"
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "IsACLProtected": true,
+      "ContainedBy": {
+        "ObjectIdentifier": "CN=SYSTEM,DC=CORP,DC=LOCAL",
+        "ObjectType": "Container"
+      }
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "gpos",
+    "count": 1,
+    "version": 5
+  }
+}

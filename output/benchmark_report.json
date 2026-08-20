@@ -1,0 +1,214 @@
+{
+  "baseline": {
+    "path": [
+      "TEST_USER",
+      "TEST_SVC",
+      "TEST_SRV1",
+      "DOMAIN ADMINS"
+    ],
+    "path_length": 3,
+    "techniques": [
+      "Kerberoast",
+      "UnconstrainedDelegation",
+      "DCSync"
+    ],
+    "mitre": [
+      {
+        "id": "T1558.003",
+        "tactic": "Credential Access",
+        "name": "Kerberoasting"
+      },
+      {
+        "id": "T1550 / T1187",
+        "tactic": "Lateral Movement",
+        "name": "Unconstrained Delegation"
+      },
+      {
+        "id": "T1003.006",
+        "tactic": "Credential Access",
+        "name": "DCSync"
+      }
+    ]
+  },
+  "agent": {
+    "success_rate": 1.0,
+    "avg_path_length": 3.0,
+    "episodes": [
+      {
+        "episode": 1,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 2,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 3,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 4,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 5,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 6,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 7,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 8,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 9,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      },
+      {
+        "episode": 10,
+        "path": [
+          "TEST_USER",
+          "TEST_WS1",
+          "TEST_SRV1",
+          "DOMAIN ADMINS"
+        ],
+        "path_length": 3,
+        "techniques": [
+          "UnconstrainedDelegation",
+          "WriteDacl",
+          "DCSync"
+        ],
+        "reached_goal": true,
+        "total_reward": 100
+      }
+    ]
+  },
+  "comparison": {
+    "same_path_as_baseline": false,
+    "baseline_length": 3,
+    "agent_avg_length": 3.0
+  }
+}

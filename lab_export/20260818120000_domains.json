@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-3239415629-1234567890-987654321",
+      "Properties": {
+        "name": "CORP.LOCAL",
+        "domain": "CORP.LOCAL",
+        "distinguishedname": "DC=CORP,DC=LOCAL",
+        "domainsid": "S-1-5-21-3239415629-1234567890-987654321",
+        "functionallevel": "2016",
+        "collected": true,
+        "whencreated": 1734220800
+      },
+      "Trusts": [],
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-3239415629-1234567890-987654321-1105",
+          "PrincipalType": "User",
+          "RightName": "GetChanges",
+          "IsInherited": false
+        },
+        {
+          "PrincipalSID": "S-1-5-21-3239415629-1234567890-987654321-1105",
+          "PrincipalType": "User",
+          "RightName": "GetChangesAll",
+          "IsInherited": false
+        },
+        {
+          "PrincipalSID": "S-1-5-21-3239415629-1234567890-987654321-512",
+          "PrincipalType": "Group",
+          "RightName": "GetChanges",
+          "IsInherited": true
+        },
+        {
+          "PrincipalSID": "S-1-5-21-3239415629-1234567890-987654321-512",
+          "PrincipalType": "Group",
+          "RightName": "GetChangesAll",
+          "IsInherited": true
+        }
+      ],
+      "Links": [],
+      "ChildObjects": [],
+      "GPLinks": [],
+      "IsDeleted": false,
+      "IsACLProtected": false,
+      "ContainedBy": null
+    }
+  ],
+  "meta": {
+    "methods": 2032959,
+    "type": "domains",
+    "count": 1,
+    "version": 5
+  }
+}
