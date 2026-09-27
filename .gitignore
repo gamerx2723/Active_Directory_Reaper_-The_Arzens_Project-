@@ -1,7 +1,19 @@
+# Python environments & cache
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Heavy RL model binaries (not suitable for serverless / git)
 output/*.zip
-config.local.env
+
+# Vercel CLI cache
+.vercel/
+
+# Logs & local environments
 *.log
+config.local.env
+.env
 .DS_Store

@@ -67,7 +67,7 @@ def api_train():
     # Dynamically choose source based on data directory contents
     bloodhound_path = os.path.join(BASE_DIR, "data", "bloodhound_export.json")
     source_arg = "--source json" if os.path.exists(bloodhound_path) else "--source mock"
-    cmd = f"python scripts/train.py {source_arg}"
+    cmd = f'"{sys.executable}" scripts/train.py {source_arg}'
     
     # Run synchronously so the frontend waits until training actually finishes
     output = run_subprocess(cmd)
@@ -78,7 +78,7 @@ def api_train():
 def api_benchmark():
     bloodhound_path = os.path.join(BASE_DIR, "data", "bloodhound_export.json")
     source_arg = "--source json" if os.path.exists(bloodhound_path) else "--source mock"
-    cmd = f"python scripts/benchmark.py {source_arg}"
+    cmd = f'"{sys.executable}" scripts/benchmark.py {source_arg}'
     output = run_subprocess(cmd)
     return output, 200, {"Content-Type": "text/plain"}
 
